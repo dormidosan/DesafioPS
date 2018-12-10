@@ -38,4 +38,6 @@ Para finalizar nos movemos a la carpeta **client** y ejecutamos:
 npm install
 ng serve --open
 ```
+el comando **npm install** solo debe ser usado una vez y cuando la paqueteria sea instalada no sera necesario volverlo a ejecutar
+
 # Se advierte que se necesita de la paqueteria mencionada al inicio de este documento
