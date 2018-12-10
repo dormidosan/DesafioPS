@@ -1,0 +1,42 @@
+$black-rat: #1b2228;
+$black-rat-white: #58656b;
+
+.bg-black{
+    background-color: #000;
+    box-shadow: #000 1px 1px 10px;
+}
+.card-body{
+    padding: 0.45em
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.album-container {
+    position: relative;
+    .album-info{
+        position: absolute;
+        bottom: 7px;
+        right: 0;
+        left: 0;
+        // display: none
+    }
+}
+.album-container:hover {
+    /*background-color: aqua;
+    .album-info {
+        display: block;
+    }*/
+}
+
+.btn-group {
+    box-shadow: #000 1px 1px 7px;
+    border-radius: 7px;
+}
