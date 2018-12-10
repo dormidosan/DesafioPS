@@ -6,10 +6,11 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
-  declarations: [UserComponent, LoginComponent, ProfileComponent],
+  declarations: [UserComponent, LoginComponent, ProfileComponent, LogoutComponent],
   imports: [
     CommonModule,
     UserRoutingModule,

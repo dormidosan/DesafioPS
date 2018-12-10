@@ -4,6 +4,7 @@ import { UserService } from '../services/user.service';
 import { environment } from '../../environments/environment';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-user',
@@ -27,13 +28,20 @@ export class UserComponent implements OnInit {
         private userService: UserService,
         private toastr: ToastrService,
         private modalService: NgbModal,
-        fb: FormBuilder
+        fb: FormBuilder,
+        private router: Router
     ) { 
         this.form = fb.group({
             name: ["", Validators.required],
             email: ["", Validators.required],
-            password: ["", Validators.required]
+            password: ["", Validators.required],
+            about: []
         });
+
+        let isOnSession = sessionStorage.getItem('user');
+        if(!isOnSession) {
+            this.router.navigate(['/user/login']);
+        }
     }
 
     ngOnInit() {

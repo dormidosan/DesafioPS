@@ -3,6 +3,7 @@ import { MusicService } from '../services/music.service';
 import { ToastrService } from 'ngx-toastr';
 import { environment } from '../../environments/environment';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {Router} from "@angular/router";
 
 const ORDER_BY_NAME = 0;
 const ORDER_BY_GEN = 1;
@@ -32,8 +33,14 @@ export class MusicComponent implements OnInit {
     constructor(
         private _music: MusicService,
         private toastr: ToastrService,
-        private modalService: NgbModal
-    ) { }
+        private modalService: NgbModal,
+        private router: Router
+    ) { 
+        let isOnSession = sessionStorage.getItem('user');
+        if(!isOnSession) {
+            this.router.navigate(['/user/login']);
+        }
+    }
 
     ngOnInit() { 
         this.getMusic();

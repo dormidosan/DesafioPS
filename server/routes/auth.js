@@ -10,6 +10,7 @@ router.post('/login', (req, res) => {
     let getUser = config.URL_SERVICE.USER.concat('?email='+email+'&password='+password);
     request(util.genericRequest(getUser, "GET", {}), (error, respose, body) => {
         if(!error) {
+            delete(body[0].password);
             res.json(util.genericResponse(body));
 
         } else {

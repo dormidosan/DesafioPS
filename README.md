@@ -11,7 +11,7 @@ npm install -g @angular/cli
 El primermo para el almacenamiento de los datos y el segundo para ejecutar la aplicacion angular. En el caso de usar un SO Linux es necesario anteponer el sudo, al igual que en MacOS
 
 ## Distribucion de archivos
-Este proyecto cuenta con 2 carpetas principales
+Este proyecto cuenta con 3 carpetas principales
 * client
 * fakeAPI
 * server

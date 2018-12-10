@@ -4,7 +4,8 @@
       "id": 1,
       "name": "Admin",
       "email": "admin@mail.com",
-      "password": "admin"
+      "password": "admin",
+      "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eos id! Numquam consequatur nostrum voluptatibus odit, nisi nesciunt possimus blanditiis tenetur libero! A recusandae quasi, et impedit consequatur obcaecati commodi dignissimos ea asperiores molestiae deserunt, tenetur perferendis nam iste sed harum. Delectus consectetur voluptatum nemo inventore. Harum et inventore ut molestiae ipsa, quam magnam animi quod quas ipsam aspernatur non vero adipisci impedit corporis provident veniam numquam corrupti quasi quibusdam excepturi atque amet, vitae repellendus. Distinctio ex similique minus magnam vero enim alias incidunt debitis. Sunt, adipisci ratione, consequuntur delectus eveniet assumenda amet voluptate tempora explicabo necessitatibus, iusto vero repellendus."
     }
   ],
   "favorites": [

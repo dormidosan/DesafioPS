@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../services/login.service';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -7,15 +9,22 @@ import { LoginService } from '../../services/login.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  public form: FormGroup;
+  public permissions: any;
 
-  constructor(private _login: LoginService) { }
+  constructor(private _login: LoginService, fb: FormBuilder, private router: Router) { 
+    this.form = fb.group({
+        email: ["", Validators.required],
+        password: ["", Validators.required]
+    });
+  }
 
   ngOnInit() {
-    this.login();
   }
 
   public login() {
-    this._login.post({ "email": "admin@mail.com", "password": "admin" }).subscribe(
+    let user = this.form.value;
+    this._login.post(user).subscribe(
       data => {
         console.log(data);
       },
@@ -23,8 +32,7 @@ export class LoginComponent implements OnInit {
         console.log(error);
       },
       () => {
-        let u = JSON.parse(sessionStorage.getItem('user'));
-        console.log('se termino :' + u.status);
+        this.router.navigate(['/music']);
       }
     );
   }
