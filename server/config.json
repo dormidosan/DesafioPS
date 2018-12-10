@@ -1,0 +1,6 @@
+{
+    "URL_SERVICE": {
+        "USER":"http://localhost:3000/user",
+        "FAVORITES": "http://localhost:3000/favorites"
+    }
+}

@@ -14,7 +14,28 @@ El primermo para el almacenamiento de los datos y el segundo para ejecutar la ap
 Este proyecto cuenta con 2 carpetas principales
 * client
 * fakeAPI
+* server
 
 Dentro de la carpeta **client** se encuentra una aplicacion angular, la cual tiene un README por defecto para poder ejecutarlo correctamente.
 
-Y dentro de **fakeAPI** esta un archivo JSON que mediante json-server nos ayudara a guardar y leer datos que utilizara la aplicacion angular, asi como la aplicacion angular, este tiene un pequeño README para poder ejecutar la base de datos, se advierte que de no ejecutar este archivo no se podra ejecutar correctamente la aplicacion que se encuentra dentro de **client**
+En **fakeAPI** esta un archivo JSON que mediante json-server nos ayudara a guardar y leer datos que utilizara la aplicacion angular
+
+La carpeta **server** es la encargada de hacer la union de la base de datos y la aplicacion cliente escrita en angular
+
+## Forma correcta de inicializar el proyecto
+
+Primero nos movemos a la carpeta **fakeAPI** y ejecutamos el siguiente comando en una terminal:
+```
+json-server --watch db.json
+```
+Luego nos vamos a la carpeta  **server** y desde una terminal de comandos ejecutamos:
+```
+npm install
+npm start
+```
+Para finalizar nos movemos a la carpeta **client** y ejecutamos:
+```
+npm install
+ng serve --open
+```
+# Se advierte que se necesita de la paqueteria mencionada al inicion de este documento

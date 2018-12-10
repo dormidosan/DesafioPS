@@ -40,3 +40,13 @@ $black-rat-white: #58656b;
     box-shadow: #000 1px 1px 7px;
     border-radius: 7px;
 }
+
+.modal-body, .modal-header {
+    background-color: $black-rat;
+}
+.modal-header {
+    border-bottom: 1px solid $black-rat !important;
+}
+.ngx-pagination a, .ngx-pagination button{
+    color: $black-rat-white !important;
+}

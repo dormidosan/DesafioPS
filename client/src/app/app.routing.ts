@@ -17,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: 'music',
+        redirectTo: 'user/login',
         pathMatch: 'full'
     }
 ];

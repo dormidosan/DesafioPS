@@ -8,8 +8,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './menu/menu.component';
-//import { FormsModule } from "@angular/forms";
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +18,7 @@ import { MenuComponent } from './menu/menu.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //FormsModule,
+    BrowserAnimationsModule,
     NgbModule.forRoot(),
     ToastrModule.forRoot({
       timeOut: environment.TOASTER_TIMEOUT,
@@ -27,7 +26,6 @@ import { MenuComponent } from './menu/menu.component';
     })
   ],
   providers: [
-    // LoginService
   ],
   bootstrap: [AppComponent]
 })

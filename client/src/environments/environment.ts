@@ -7,7 +7,9 @@ export const environment = {
   SERVER_ERROR_MSG: 'Error en servidor',
   TOASTER_TIMEOUT: 10000,
   PREVENT_DUPLICATES: true,
-  USER_URL: 'http://localhost:3000/user',
+  URL_USER: 'http://localhost:3001/user',
+  URL_FAV: 'http://localhost:3001/favorites',
+  URL_LOGIN: 'http://localhost:3001/login',
   ITUNE: 'https://itunes.apple.com/us/rss/topalbums/limit=100/json'
 };
 
