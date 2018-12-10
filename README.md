@@ -8,7 +8,7 @@ npm install -g json-server
 
 npm install -g @angular/cli
 ```
-El primermo para el almacenamiento de los datos y el segundo para ejecutar la aplicacion angular. En el caso de usar un SO Linux es necesario anteponer el sudo, al igual que en MacOS
+El primero para el almacenamiento de los datos y el segundo para ejecutar la aplicacion angular. En el caso de usar un SO Linux es necesario anteponer el sudo, al igual que en MacOS
 
 ## Distribucion de archivos
 Este proyecto cuenta con 3 carpetas principales
@@ -38,4 +38,4 @@ Para finalizar nos movemos a la carpeta **client** y ejecutamos:
 npm install
 ng serve --open
 ```
-# Se advierte que se necesita de la paqueteria mencionada al inicion de este documento
+# Se advierte que se necesita de la paqueteria mencionada al inicio de este documento
